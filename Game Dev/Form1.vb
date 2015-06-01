@@ -21,6 +21,14 @@
         AutoFeed1.Start()
 
         ''here comes the savedata load process
+
+
+
+
+        '' Load the savedata in the Game
+        If PictureBox2.BackgroundImage.ToString = Game_Dev.My.Resources.Cookie1.ToString Then
+            Button2.Enabled = False
+        End If
     End Sub
 
     Private Sub PictureBox2_MouseDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles PictureBox2.MouseDown

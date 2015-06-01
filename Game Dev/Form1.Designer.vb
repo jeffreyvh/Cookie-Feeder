@@ -45,14 +45,19 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BonusLabelTimer = New System.Windows.Forms.Timer(Me.components)
         Me.AutoFeed1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.Store.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StatusStrip1
@@ -86,10 +91,10 @@ Partial Class Form1
         'ScoreTotal
         '
         Me.ScoreTotal.AutoSize = True
-        Me.ScoreTotal.Font = New System.Drawing.Font("28 Days Later", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ScoreTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ScoreTotal.Location = New System.Drawing.Point(146, 28)
         Me.ScoreTotal.Name = "ScoreTotal"
-        Me.ScoreTotal.Size = New System.Drawing.Size(25, 25)
+        Me.ScoreTotal.Size = New System.Drawing.Size(29, 31)
         Me.ScoreTotal.TabIndex = 4
         Me.ScoreTotal.Text = "0"
         '
@@ -100,7 +105,7 @@ Partial Class Form1
         'Store
         '
         Me.Store.Controls.Add(Me.GroupBox1)
-        Me.Store.Location = New System.Drawing.Point(397, 34)
+        Me.Store.Location = New System.Drawing.Point(397, 22)
         Me.Store.Name = "Store"
         Me.Store.Size = New System.Drawing.Size(370, 438)
         Me.Store.TabIndex = 6
@@ -141,6 +146,9 @@ Partial Class Form1
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.PictureBox5)
+        Me.TabPage2.Controls.Add(Me.Label3)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
@@ -252,6 +260,35 @@ Partial Class Form1
         '
         Me.AutoFeed1.Interval = 1000
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(62, 20)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(139, 25)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Stock Cookie"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.Game_Dev.My.Resources.Resources.Cookie1
+        Me.PictureBox5.Location = New System.Drawing.Point(6, 6)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(50, 50)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 1
+        Me.PictureBox5.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(269, 24)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "WEAR"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -273,11 +310,14 @@ Partial Class Form1
         Me.Store.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -304,5 +344,8 @@ Partial Class Form1
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
     Friend WithEvents AutoFeed1 As System.Windows.Forms.Timer
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 
 End Class
