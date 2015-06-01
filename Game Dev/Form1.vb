@@ -110,6 +110,7 @@
 
     Private Sub BonusLabelTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BonusLabelTimer.Tick
         BonusLabel.Visible = False
+        BonusLabelTimer.Stop()
     End Sub
 
     Private Sub AutoFeed1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AutoFeed1.Tick
