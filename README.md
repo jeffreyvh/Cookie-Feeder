@@ -5,7 +5,7 @@ Cookie Feeder, it's a funny and addicting game which is worth it to try it. Buil
 - Visual Studio 2010 or newer (Written in visual basic, so you will need visual basic 2010 or higher)
 - The source code (Can be downloaded as zip)
 
-To build it :
+# Build it :
 
 - Download / Clone the repo
 - Open the .sln with visual studio
